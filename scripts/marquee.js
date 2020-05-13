@@ -23,18 +23,3 @@ class Marquee {
             })
     }
 }
-
-
-
-
-
-
-
-
-/*presentStocks();*/
-
-/*function Marquee(symbol, price) {
-    this.data.stockList[2].symbol = symbol;
-    this.data.stockList[2].price = price;
-    console.log('hi' + symbol + 'hi' + price)
-}*/

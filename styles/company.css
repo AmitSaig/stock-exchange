@@ -1,0 +1,80 @@
+body {
+	color: black;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#symbolName {
+	font-size: 30px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+#symbolDesc {
+	font-size: 25px;
+	text-align: center;
+
+}
+
+.stonks {
+	font-size: 30px;
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-between;
+	width: 40%;
+}
+
+.changes {
+	display: flex;
+	flex-direction: row;
+}
+
+/* arrow style */
+.stock-up {
+	visibility: hidden;
+	color: #30FC20;
+}
+.stock-down {
+	visibility: hidden;
+	color: #FF0A21;
+}
+.showUp {
+	visibility: visible;
+	color: #30FC20;
+}
+.showDown {
+	visibility: visible;
+	color: #FF0A21;
+}
+/* spinner style */
+#spinner {
+    visibility: hidden;
+    width: 75px;
+    height: 75px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid black;
+    border-radius: 100%;
+    position: absolute;
+    top: 700px;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#spinner.show {
+    visibility: visible;
+}

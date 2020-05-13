@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    background-image: url(https://www.itl.cat/pngfile/big/147-1475006_stock-market-wallpaper-trading-chart.jpg);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+mark {
+    background: yellow!important;
+    color: black;
+    padding: 0!important;
+}
+
+#stockMarq div {
+    font-size: 20px;
+   
+}
+
+.marq-style {
+    display: flex;
+}
+
+.marq-style p {
+    color: #25C900;
+}
+
+.searchContainer {
+    width: 65%;
+    position: relative;
+    left: 15%;
+    height: 750px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 33px -10px rgba(100,100,100,0.75);
+    border-radius: 38px 38px 38px 38px;
+}
+
+.stockHeader {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-control {
+	width: 80%!important;
+}
+
+.append-error {
+    padding-bottom: 50%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    border-width: 200px;
+    background-color: white;
+    border-bottom: 1px solid #DDDBDB;
+    color: #0880CD;
+}
+
+.append-class {
+    font-size: 17px;
+    padding-left: 7%;
+    padding-bottom: 7px;
+    padding-top: 7px;
+	font-family: 'Inter', sans-serif;
+	text-align: left;
+    border-width: 200px;
+    background-color: white;
+	border-bottom: 1px solid #DDDBDB;
+	color: #0880CD;  
+    height: 60px;
+}
+
+.append-class img {
+    width: 40px;
+}
+
+.append-class button {
+
+}
+
+.positive {
+    font-size: 15px;
+    color: #29F800;
+    padding-left: 5px;
+}
+
+.negative {
+    font-size: 15px;
+    color: #F91217;
+    padding-left: 5px;
+}
+
+
+/* compare button styles */
+.compareBtn {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color:#599bb3;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:5px 10px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 1px;
+
+}
+
+.compareBtn:hover {
+    background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+    background-color:#408c99;
+}
+
+.compareBtn:focus {
+    outline: none;
+}
+
+/* spinner style */
+#spinner {
+    visibility: hidden;
+    width: 55px;
+    height: 55px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid black;
+    border-radius: 100%;
+    position: relative;
+    top: 150px;
+    margin: auto;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#spinner.show {
+    visibility: visible;
+}
+
+
+

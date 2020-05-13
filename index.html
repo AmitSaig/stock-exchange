@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stocks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="mark.js/dist/mark.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topMarq">
+        <marquee id='stockMarq'> </marquee>
+    </div>    
+    <div id="search" class="searchContainer">
+        <h1 class="stockHeader">Search Nasdaq Stocks</h1>
+        <nav class="navbar navbar-light bg-light">
+            <div class="nav-bar"></div>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" type="submit">Clear</button>
+        </nav>
+        <div id="spinner"></div>
+        <div id="resultsList">
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="scripts/marquee.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+
+</html>

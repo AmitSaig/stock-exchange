@@ -1,0 +1,38 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stocks!</title>
+    <link rel="stylesheet" href="styles/company.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="container">
+        <img src="" id="symbolPicture">
+        <p id="symbolName"></p>
+        <p id="symbolDesc"></p>
+        <a id="symbolLink" href="">Visit us!</a>
+        <div class="stonks">
+            <p id="stockPrice"></p>
+            <div class="changes">
+            	<p id="stockChange"></p>
+            	<p class="stock-up" id="stockUp">&#129073</p>
+            	<p class="stock-down" id="stockDown">&#129075</p>
+            </div>
+        </div>
+        <div id="spinner"></div>
+        <canvas id="myChart" width="200" height="70"></canvas>
+    </div>
+    
+
+
+
+    <script type="text/javascript" src="scripts/company.js"></script>
+</body>
+
+</html>

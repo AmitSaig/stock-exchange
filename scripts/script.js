@@ -5,7 +5,7 @@ let test = document.getElementById("resultsList").childElementCount;
 
 
 //marq function
-(async function() {
+(function() {
     const marquee = new Marquee(document.getElementById('stockMarq'))
     marquee.load();
 })()
